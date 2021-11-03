@@ -6,5 +6,20 @@ multiplica = 0
 divide = 0
 numero1 = int(input("Primer Numero :"))
 numero2 = int(input("Segundo Numero :"))
-suma = str(numero1 + numero2)
-print ("La suma es : ",suma)
+operacion = input("Seleccione >> 1.suma , 2.resta , 3.división , 4.multiplicación ")
+if operacion == "1":
+
+    print("Suma :",numero1 + numero2)
+elif operacion == "2":
+
+    print(numero1 - numero2)
+
+elif operacion == "3":
+
+    print(numero1 / numero2)
+
+elif operacion == "4":
+
+    print(numero1 * numero2)
+else:
+    print("Seleccione un numero del 1 al 4")
