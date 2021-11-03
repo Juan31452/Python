@@ -1,9 +1,5 @@
 numero1 = 0
 numero2 = 0
-suma = 0
-resta = 0
-multiplica = 0
-divide = 0
 operacion = 0
 
 i = 0
