@@ -21,5 +21,8 @@ while i < 4:
     elif operacion == 4:
       print(numero1 * numero2)
       continue
+    elif operacion == 5:
+      print("Hasta Luego")
+      break
 else:
       print("Hasta Luego")
