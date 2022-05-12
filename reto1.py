@@ -1,23 +1,23 @@
-def calculocdt(usuario:str,capital:int,tiempo:int):
+def CDT(usuario:str,capital:int,tiempo:int):
  interes = 0.03
  perder = 0.02
  if tiempo > 2 :
      
      valor_interes = (capital * interes * tiempo)/12 
      valor_total = valor_interes + capital
-     print("Para el usuario "+ usuario," la cantidad de dinero a recibir,\n" 
-           "según el monto inicial",+ capital ,
-           "\n para un tiempo de",tiempo ,"meses es" ,valor_total)
+     cadena = ("Para el usuario "+usuario+" "+"La cantidad de dinero a " 
+           "recibir,según el monto inicial"+" "+str(capital)+" "+"para un tiempo"
+           " de "+str(tiempo)+" "+"meses es "+str(valor_total))
+     return cadena
  
- if tiempo <=2:
+ else:
      valor_perder = capital * perder
      valor_total = capital -valor_perder
-     print("Para el usuario "+ usuario," la cantidad de dinero a recibir,\n" 
-           "según el monto inicial",+ capital ,
-           "\n para un tiempo de",tiempo ,"meses es" ,valor_total)
-
-usu = input("Usuario :")
-cap = int(input("Capital :"))
-tie = int(input("Tiempo :"))
+     cadena = ("Para el usuario "+usuario+" "+"La cantidad de dinero a " 
+           "recibir,según el monto inicial"+" "+str(capital)+" "+"para un tiempo"
+           " de "+str(tiempo)+" "+"meses es "+str(valor_total))
+     return cadena
  
-calculocdt(usu,cap,tie)     
+
+print(CDT("AB1012",1000000,3))     
+print(CDT("ER3366",650000,2))     
