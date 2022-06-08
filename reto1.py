@@ -3,7 +3,7 @@ def CDT(usuario:str,capital:int,tiempo:int):
  perder = 0.02
  
  micadena = ("Para el usuario "+usuario+" "+"La cantidad de dinero a " 
-           "recibir,según el monto inicial"+" "+str(capital)+" "+"para un tiempo"
+           "recibir, según el monto inicial"+" "+str(capital)+" "+"para un tiempo"
            " de "+str(tiempo)+" "+"meses ")
     
  
@@ -11,13 +11,13 @@ def CDT(usuario:str,capital:int,tiempo:int):
      
      valor_interes = (capital * interes * tiempo)/12 
      valor_total = valor_interes + capital
-     cadena = micadena +"es "+str(valor_total)
+     cadena = micadena +"es: "+str(valor_total)
      return cadena
  
  else:
      valor_perder = capital * perder
      valor_total = capital - valor_perder
-     cadena = micadena +"es "+str(valor_total)
+     cadena = micadena +"es: "+str(valor_total)
      return cadena
  
 
