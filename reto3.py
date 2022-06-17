@@ -2,7 +2,7 @@ def AutoPartes(ventas: list):
     venta={}
     for IdProducto, dProducto, pnProducto, cvProducto, sProducto, nComprador, cComprador, fVenta in ventas:
         if venta.get(IdProducto)==None:
-            venta[IdProducto]=[]
+            venta[IdProducto]=[]           
         venta[IdProducto].append((dProducto, pnProducto, cvProducto, sProducto, nComprador, cComprador,fVenta))    
     return venta
 
